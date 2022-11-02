@@ -2,9 +2,10 @@
 #   Copyright © 2020 AppMillers. All rights reserved.
 
 class TreeNode:
-    def __init__(self, data, children = []):
+    def __init__(self, data, children = [],hello='yes'):
         self.data = data
         self.children = children
+        self.hello    = hello
     
     def __str__(self, level=0):
         ret = "  " * level + str(self.data)  + "\n"
